@@ -1,0 +1,51 @@
+# Classificador de celular. A ordem de `classes` é o índice da saída do modelo.
+input_size: 160
+crop:
+  scale: 2.2
+  shift: 0.1
+
+# Rótulos do nível 6 do DMD ("Driver actions"), escritos como na wiki do dataset.
+# Os nomes no JSON podem ser outros: o build para com erro se aparecer um rótulo
+# que não está aqui.
+classes:
+  normal:
+    - "Safe Driving"
+    - "Radio"
+    - "Reach Side"
+    - "Reach Backseat"
+    - "Change Gear"
+    - "Talking to passenger"
+    - "Stand Still-Waiting"
+  phone_call:
+    - "Phone call (Right)"
+    - "Phone call (Left)"
+  drinking:
+    - "Drinking"
+  hair_makeup:
+    - "Hair and Makeup"
+
+# Texting é o celular na altura do volante, fora do crop do rosto.
+ignore:
+  - "Texting (Right)"
+  - "Texting (Left)"
+  - "Unclassified"
+
+dataset:
+  every_n_frames: 10
+
+# Por motorista. Com 37 motoristas dá 24/7/6, a mesma proporção do artigo do DMD.
+split:
+  seed: 0
+  fractions:
+    val: 0.19
+    test: 0.16
+
+train:
+  batch_size: 64
+  num_workers: 4
+  head_epochs: 3
+  head_lr: 1.0e-3
+  finetune_epochs: 12
+  finetune_lr: 1.0e-4
+  weight_decay: 1.0e-4
+  patience: 4
