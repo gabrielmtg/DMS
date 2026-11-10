@@ -1,0 +1,19 @@
+capture:
+  width: 640
+  height: 480
+  camera_fps: 30
+  # Recorte do lado do motorista: [x, y, largura, altura] em fração da imagem.
+  # null usa a imagem inteira.
+  driver_roi: null
+
+perception:
+  model_path: models/face_landmarker.task
+  min_face_detection_confidence: 0.5
+  min_face_presence_confidence: 0.5
+  min_tracking_confidence: 0.5
+
+targets:
+  fps: 10
+  frame_p95_ms: 100
+  cpu_cores: 3
+  rss_mb: 500

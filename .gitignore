@@ -1,0 +1,12 @@
+.venv/
+.venv-train/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Licença do DMD não permite redistribuir; modelos são baixados.
+data/
+models/
+results/
+runs/
