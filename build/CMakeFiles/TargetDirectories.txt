@@ -1,0 +1,4 @@
+/home/dudu/Documents/Study/DMS/build/CMakeFiles/core_pipeline.dir
+/home/dudu/Documents/Study/DMS/build/CMakeFiles/test_crop.dir
+/home/dudu/Documents/Study/DMS/build/CMakeFiles/edit_cache.dir
+/home/dudu/Documents/Study/DMS/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcore_pipeline.a CMakeFiles/core_pipeline.dir/src/preprocessor.cpp.o
+/usr/bin/ranlib libcore_pipeline.a

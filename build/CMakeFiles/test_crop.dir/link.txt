@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_crop.dir/link.d CMakeFiles/test_crop.dir/tests/test_crop.cpp.o -o test_crop  libcore_pipeline.a /usr/lib/libopencv_imgcodecs.so.5.0.0 /usr/lib/libopencv_imgproc.so.5.0.0 /usr/lib/libopencv_geometry.so.5.0.0 /usr/lib/libopencv_flann.so.5.0.0 /usr/lib/libopencv_core.so.5.0.0
